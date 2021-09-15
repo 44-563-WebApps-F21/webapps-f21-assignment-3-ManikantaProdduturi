@@ -37,7 +37,59 @@
         </ul>
         <a href="file:///C:/Users/S544904/Desktop/webapps-repos/webapps-f21-assignment-3-ManikantaProdduturi/aboutme.html">Press this text to view aboutme</a>
         <hr>
+        <h3>TABLE</h3>
+<table border="1">
+    <thead>
         
+  <tr>
+      <th>No.</th>
+      <th>food </th>
+      <th>location </th>
+      <th>cost</th>
+ </tr>
+ <thead>
+ <tr>
+     <td>1</td>
+     <td>Croissants</td>
+     <td>Rue Denoyez</td>
+     <td>6$</td>
+  </tr>
+  <tr>
+      <td>2</td>
+      <td>Escargots</td>
+      <td>Vieille</td>  
+      <td>10$</td>
+   </tr>
+   <tr>
+       <td>3</td>
+       <td>Onion soup</td>  
+       <td>Rue Montorguei</td>
+       <td>7$</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Rue des</td>
+        <td>Des Martyrs</td>
+        <td>15$</td>
+    </tr>
+    </table>
+<hr>
+<h3>CODE DISPLAY</h3>
+<pr>
+    <blockquote><q> A binomial coefficient equals the number of combinations of r items that can be selected from a set of n items.
+        It also represents an entry in Pascal triangle. These numbers are called binomial coefficients because they are coefficients in the binomial theorem.</q></blockquote>
+</pr>
+      <a href="https://www.mathwords.com/b/binomial_coefficients.htm#:~:text=A%20binomial%20coefficient%20equals%20the,coefficients%20in%20the%20binomial%20theorem.">Press this for Reference link</a>
+<pre>
+    int C(int n, int k) {
+        int res = 1;
+        for (int i = n - k + 1; i <= n; ++i)
+            res *= i;
+        for (int i = 2; i <= k; ++i)
+            res /= i;
+        return res;
+    }
+   
+</pre>
 </body>
-
 </html>
